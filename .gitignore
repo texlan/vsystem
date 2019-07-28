@@ -1,0 +1,7 @@
+
+
+# pycharm idea
+.idea/
+# venv if used
+venv/
+
