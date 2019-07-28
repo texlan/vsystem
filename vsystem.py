@@ -1,13 +1,8 @@
-import colorama
-from colorama import Fore, Back, Style
 import crcmod
-import serial
-import serial.rs485
+import serial, serial.rs485
 import threading, logging, time
 from decimal import *
 import vcmd
-from pprint import pprint
-from vcmd import *
 
 logging.basicConfig(
      level=logging.INFO,
@@ -241,7 +236,6 @@ class vSystem:
                     self.newModuleData.set()
                 # Trigger new system data event
                 self.newSysData.set()
-                #time.sleep(.1)
 
 
 if __name__ == '__main__':
